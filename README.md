@@ -6,26 +6,26 @@ This script builds out aws infrastructure to deploy a wordpress site.
 
 1. Create the wordpress keypair.
 
-  ```ssh-keygen -t rsa -C "wordpress" -P '' -f ~/.ssh/wordpress```
+```ssh-keygen -t rsa -C "wordpress" -P '' -f ~/.ssh/wordpress```
 
-2. Obtain the
+2. Obtain a key set for your AWS account. Create a terraform.tfvars file in your
+wordpress directory.
 
 ```
 access_key = "<your_access_key>"
 secret_key = "<your_secret_key>"
 ```
 
-2. Install terraform and add it to your path
-  https://www.terraform.io/downloads.html
+3. Install [terraform](https://www.terraform.io/downloads.html) and add it to your path.
 
-3. Install the files on your computer in any directory and run the demo.
+4. Install the files on your computer in any directory and run the demo.
 
-  ```
-  git clone https://github.com/robertdeheer/wordpress
-  cd wordpress
-  terraform apply
-  ```
+```
+git clone https://github.com/robertdeheer/wordpress
+cd wordpress
+terraform apply
+```
 
 ## Credits
 
-This demo is based on[Greg Osuri's Terraform demo](https://www.airpair.com/aws/posts/ntiered-aws-docker-terraform-guide).
+This demo is based on [Greg Osuri's Terraform demo](https://www.airpair.com/aws/posts/ntiered-aws-docker-terraform-guide).
