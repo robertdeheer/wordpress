@@ -26,6 +26,12 @@ cd wordpress
 terraform apply
 ```
 
+## Next Steps
+
+* Deploy Atlas and leverage it to manage the state of this deployment.
+* Update this deployment to use and application load balancer.
+* Update this cookbook to use route53 for blue green deployments.
+
 ## Credits
 
 This demo is based on [Greg Osuri's Terraform demo](https://www.airpair.com/aws/posts/ntiered-aws-docker-terraform-guide).
